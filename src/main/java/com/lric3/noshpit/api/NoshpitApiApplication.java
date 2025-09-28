@@ -1,4 +1,4 @@
-package com.lric3.noshpit_api;
+package com.lric3.noshpit.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
