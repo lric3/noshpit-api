@@ -16,14 +16,13 @@ public class UserFactory {
     }
 
     public User createNewUser(UserRegistrationDto registrationDto) {
-
-        User newUser = new User();
-        newUser.setEmail(registrationDto.getEmail());
-        newUser.setFirstName(registrationDto.getFirstName());
-        newUser.setLastName(registrationDto.getLastName());
-        newUser.setPassword(passwordEncoder.encode(registrationDto.getPassword()));
-        newUser.setUsername(registrationDto.getUsername());
-        return newUser;
+        return User.builder()
+                .email(registrationDto.getEmail())
+                .firstName(registrationDto.getFirstName())
+                .lastName(registrationDto.getLastName())
+                .password(passwordEncoder.encode(registrationDto.getPassword()))
+                .username(registrationDto.getUsername())
+                .build();
     }
 
     public UserDto createUserDto(User user) {

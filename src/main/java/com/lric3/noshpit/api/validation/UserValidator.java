@@ -1,4 +1,4 @@
-package com.lric3.noshpit.api.validate;
+package com.lric3.noshpit.api.validation;
 
 import com.lric3.noshpit.api.dto.UserRegistrationDto;
 import com.lric3.noshpit.api.entity.User;

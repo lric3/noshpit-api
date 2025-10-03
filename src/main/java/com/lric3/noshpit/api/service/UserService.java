@@ -5,7 +5,7 @@ import com.lric3.noshpit.api.dto.UserRegistrationDto;
 import com.lric3.noshpit.api.entity.User;
 import com.lric3.noshpit.api.factory.UserFactory;
 import com.lric3.noshpit.api.repository.UserRepository;
-import com.lric3.noshpit.api.validate.UserValidator;
+import com.lric3.noshpit.api.validation.UserValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
